@@ -1,0 +1,7 @@
+Django passo a passo
+
+Primeiramente foi instalado o virtualenv no python
+Depois foi instalado Django dentro do ambiente virtual pelo pip install django==1.6
+
+Criar um projeto usando o comando:
+django-admin startproject meusite
