@@ -5,3 +5,21 @@ Depois foi instalado Django dentro do ambiente virtual pelo pip install django==
 
 Criar um projeto usando o comando:
 django-admin startproject meusite
+
+python manage.py runserver
+
+em views.py
+from django.http import HttpResponse
+
+
+def index(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
+    
+em urls.py
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+]
